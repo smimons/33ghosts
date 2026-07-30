@@ -53,7 +53,7 @@ export const games: Game[] = [
   },
   {
     id: 'four-word',
-    name: 'Four Word',
+    name: 'FourWord',
     subtitle: 'A lateral thing word puzzle: four clues, no context',
     url: 'https://playfourword.com',
     status: 'awaiting-launch',

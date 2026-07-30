@@ -33,7 +33,7 @@ function App() {
     <>
       <header id="top">
         <h1>we are 33ghosts</h1>
-        <p className="tagline">A solo puzzle game studio. Here's what's cooking.</p>
+        <p className="tagline">A solo puzzle game studio.</p>
       </header>
 
       <section id="games">
