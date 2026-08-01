@@ -66,15 +66,15 @@ export const games: Game[] = [
     status: 'prototype',
   },
   {
-    id: 'mini-scrabble',
-    name: 'Codename: Tessera',
+    id: 'ten-tiles',
+    name: 'Codename: Ten Tiles',
     subtitle: 'A crossword without the clues',
     url: null,
     status: 'concept',
   },
   {
     id: 'lg-square',
-    name: 'Codename: Sudotwo',
+    name: 'Codename: Twindle',
     subtitle: 'A grid puzzle with many layers',
     url: null,
     status: 'concept',
