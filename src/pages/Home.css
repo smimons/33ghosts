@@ -54,8 +54,8 @@
   border-color: var(--status-dev);
 }
 .card--prototype {
-  border-color: var(--border-subtle);
-  border-style: dashed;
+  border-color: var(--status-dev);
+  border-style: dotted;
 }
 .card--concept {
   border-color: var(--border-subtle);

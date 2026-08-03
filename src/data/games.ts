@@ -67,10 +67,10 @@ export const games: Game[] = [
   },
   {
     id: 'ten-tiles',
-    name: 'Codename: Ten Tiles',
+    name: 'Ten Tiles',
     subtitle: 'A crossword without the clues',
-    url: null,
-    status: 'concept',
+    url: 'https://tentiles.surge.sh',
+    status: 'prototype',
   },
   {
     id: 'lg-square',
