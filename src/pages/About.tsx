@@ -4,7 +4,7 @@ import './About.css'
 function About() {
   return (
     <section id="about">
-      <p className="eyebrow">Part No. 002</p>
+      <p className="eyebrow">Part No. 02</p>
       <h1>About</h1>
       <p>33ghosts is a game-development studio based in Bristol, UK.
         We strive to create simple yet satisfying puzzle games with one goal in mind: good honest puzzling.
