@@ -7,10 +7,10 @@ function About() {
       <p className="eyebrow">Part No. 02</p>
       <h1>About</h1>
       <p>33ghosts is a game-development studio based in Bristol, UK.
-        We strive to create simple yet satisfying puzzle games with one goal in mind: good honest puzzling.
+        We strive to create simple yet satisfying puzzle games with one goal in mind: a single unique idea, executed well.
       </p>
       <p>
-        Every game is free to play, in full, for everyone without distraction; no ads, no paywalls, no sign-ins, no
+        Every one of our games is free to play, in full, for everyone without distraction; no ads, no paywalls, no sign-ins, no
         in-app purchases, no guilt tripping streak counters or notifications. We believe that good 
         games speak for themselves.
         </p>
