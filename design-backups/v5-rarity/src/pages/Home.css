@@ -1,0 +1,164 @@
+#intro {
+  padding: 32px 24px 8px;
+
+  @media (max-width: 640px) {
+    padding: 24px 16px 4px;
+  }
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: var(--ink-muted);
+  font-size: 14.5px;
+  margin-top: 6px;
+}
+
+#games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 28px 24px 48px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    padding: 20px 16px 36px;
+    gap: 16px;
+  }
+}
+
+.card {
+  --rarity-color: var(--common);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 2px solid var(--rarity-color);
+  background: var(--bg-subtle);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.rarity--common {
+  --rarity-color: var(--common);
+}
+.rarity--uncommon {
+  --rarity-color: var(--uncommon);
+}
+.rarity--rare {
+  --rarity-color: var(--rare);
+}
+.rarity--epic {
+  --rarity-color: var(--epic);
+}
+.rarity--legendary {
+  --rarity-color: var(--legendary);
+}
+
+a.card:hover,
+a.card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px -10px var(--rarity-color), 0 0 0 1px var(--rarity-color);
+}
+
+a.card:focus-visible {
+  outline: 2px solid var(--rarity-color);
+  outline-offset: 3px;
+}
+
+.card--inert {
+  opacity: 0.55;
+}
+
+.holo {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(245, 185, 61, 0.22) 40%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(194, 102, 255, 0.22) 60%,
+    transparent 80%
+  );
+  background-size: 250% 250%;
+  background-position: 0% 50%;
+  transition: background-position 0.6s ease;
+}
+
+a.card:hover .holo {
+  background-position: 100% 50%;
+}
+
+.card-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: color-mix(in srgb, var(--rarity-color) 20%, var(--bg-raised));
+  border-bottom: 1px solid var(--border);
+}
+
+.rarity-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--rarity-color);
+}
+
+.stars {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--rarity-color);
+}
+
+.card-body {
+  padding: 16px 16px 12px;
+  flex: 1;
+}
+
+.card-body h2 {
+  margin-bottom: 6px;
+}
+
+.flavor {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ink-muted);
+  line-height: 140%;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.card-no {
+  font-size: 11px;
+  color: var(--ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.play {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--rarity-color);
+}

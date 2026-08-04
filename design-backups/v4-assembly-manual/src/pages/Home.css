@@ -6,10 +6,6 @@
   }
 }
 
-#intro h1 {
-  font-size: 28px;
-}
-
 .eyebrow {
   font-size: 12px;
   font-weight: 600;
@@ -55,10 +51,6 @@
   text-decoration: none;
   color: inherit;
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-}
-
-.card--in-development {
-    border-style: dashed;
 }
 
 .card--prototype,

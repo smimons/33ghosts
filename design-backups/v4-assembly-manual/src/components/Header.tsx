@@ -1,13 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import './Header.css'
-import { games } from '../data/games'
 
 const NAV_LINKS = [
   { to: '/', label: 'Games', num: '01', end: true },
   { to: '/about', label: 'About', num: '02' },
 ]
-
-const gameLinks: string[] = games.map(game => game.url).filter(url => url !== null);
 
 function Header() {
   return (
@@ -15,16 +12,9 @@ function Header() {
       <div className="stripe" aria-hidden="true" />
       <header id="site-header">
         <NavLink to="/" className="logo" end>
-          33GHOSTS
+          33ghosts
         </NavLink>
         <nav>
-          <NavLink 
-          className={({ isActive }) => (isActive ? 'active' : undefined)}
-          to={gameLinks[(Math.floor(Math.random() * gameLinks.length))]}
-          >              <span className="num">?</span>
-
-            Random Game
-          </NavLink>
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.to}

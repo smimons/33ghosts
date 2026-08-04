@@ -69,6 +69,26 @@ body {
   position: relative;
 }
 
+/* registration-mark corners, like a printed manual sheet */
+#root::before,
+#root::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid var(--ink);
+  pointer-events: none;
+}
+#root::before {
+  left: 0;
+  border-left: 2px solid var(--ink);
+}
+#root::after {
+  right: 0;
+  border-right: 2px solid var(--ink);
+}
+
 h1,
 h2,
 h3 {

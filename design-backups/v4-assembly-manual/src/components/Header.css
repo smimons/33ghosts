@@ -17,7 +17,7 @@
 
 #site-header .logo {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 19px;
   letter-spacing: -0.02em;
   color: var(--ink);
   text-decoration: none;
@@ -53,8 +53,8 @@
   color: var(--ink-muted);
   border: 1.5px solid var(--ink-muted);
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;

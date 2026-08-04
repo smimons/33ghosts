@@ -8,11 +8,9 @@
 }
 
 #about .eyebrow {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ink-muted);
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--text-muted);
   margin-bottom: 10px;
 }
 
@@ -22,11 +20,7 @@
 
 #about p:not(.eyebrow) {
   margin-top: 12px;
+  font-family: var(--sans);
   font-size: 14.5px;
   line-height: 155%;
-  color: var(--ink);
-}
-
-.link {
-  font-weight: 600;
 }

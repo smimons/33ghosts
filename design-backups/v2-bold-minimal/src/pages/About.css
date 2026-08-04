@@ -1,0 +1,14 @@
+#about {
+  padding: 28px 24px;
+  max-width: 640px;
+
+  @media (max-width: 640px) {
+    padding: 20px 16px;
+  }
+}
+
+#about p {
+  margin-top: 10px;
+  font-size: 14.5px;
+  line-height: 155%;
+}

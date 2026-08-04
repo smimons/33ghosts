@@ -1,0 +1,92 @@
+:root {
+  --text: #a8a6b0;
+  --text-muted: #6f6d78;
+  --text-h: #f7f7f8;
+  --bg: #0c0c0e;
+  --bg-subtle: #17171a;
+  --border: #f7f7f8;
+  --border-subtle: #2a2a2f;
+  --code-bg: #1f2028;
+
+  --accent: #a879ff;
+  --teal: #2dd4bf;
+  --magenta: #ff4d94;
+
+  --status-live: var(--teal);
+  --status-launch: var(--accent);
+  --status-dev: var(--magenta);
+  --status-prototype: var(--text-muted);
+  --status-concept: var(--text-muted);
+
+  --sans: 'Space Grotesk', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Space Grotesk', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/145% var(--sans);
+  letter-spacing: 0.1px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 15px;
+  }
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -0.03em;
+  margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 26px;
+  }
+}
+h2 {
+  font-size: 19px;
+  line-height: 120%;
+  margin: 0 0 4px;
+  @media (max-width: 1024px) {
+    font-size: 17px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+  font-size: 13.5px;
+  line-height: 135%;
+  padding: 3px 6px;
+  background: var(--code-bg);
+}

@@ -60,10 +60,8 @@ function Home() {
     <>
       <section id="intro">
         <p className="eyebrow">Catalogue &mdash; No. 001</p>
-        <h1>Our Games</h1>
-        <p className="tagline">
-          Everything currently in the works, from finished releases to early sketches.
-        </p>
+        <h1>33ghosts</h1>
+        <p className="tagline">A puzzle game studio</p>
       </section>
 
       <section id="games">
