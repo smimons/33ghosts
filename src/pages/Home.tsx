@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react'
 import { games, STATUS_META } from '../data/games'
 import type { Game, GameStatus } from '../data/games'
 import './Home.css'
@@ -28,7 +29,7 @@ function Stepper({ status }: { status: GameStatus }) {
   )
 }
 
-function GameCard({ game }: { game: Game }) {
+function GameCard({ game, index }: { game: Game; index: number }) {
   const status = STATUS_META[game.status]
   const content = (
     <>
@@ -38,28 +39,37 @@ function GameCard({ game }: { game: Game }) {
       </span>
       <h2>{game.name}</h2>
       <p className="subtitle">{game.subtitle}</p>
-      {game.url && <span className="visit">Open &rarr;</span>}
+      {game.url && (
+        <span className="visit">
+          Open <span className="arrow">&rarr;</span>
+        </span>
+      )}
     </>
   )
 
   const cardClass = `card card--${game.status}`
+  const style = { '--i': index } as CSSProperties
 
   if (game.url) {
     return (
-      <a className={cardClass} href={game.url} target="_blank" rel="noopener noreferrer">
+      <a className={cardClass} style={style} href={game.url} target="_blank" rel="noopener noreferrer">
         {content}
       </a>
     )
   }
 
-  return <div className={`${cardClass} card--inert`}>{content}</div>
+  return (
+    <div className={`${cardClass} card--inert`} style={style}>
+      {content}
+    </div>
+  )
 }
 
 function Home() {
   return (
     <>
       <section id="intro">
-        <p className="eyebrow">Catalogue &mdash; No. 001</p>
+        <p className="eyebrow">Part No. 001</p>
         <h1>Our Games</h1>
         <p className="tagline">
           Everything currently in the works, from finished releases to early sketches.
@@ -67,8 +77,8 @@ function Home() {
       </section>
 
       <section id="games">
-        {games.map((game) => (
-          <GameCard key={game.id} game={game} />
+        {games.map((game, index) => (
+          <GameCard key={game.id} game={game} index={index} />
         ))}
       </section>
     </>
