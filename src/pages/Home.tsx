@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react'
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { games, STATUS_META } from '../data/games'
 import type { Game, GameStatus } from '../data/games'
 import './Home.css'
@@ -106,6 +106,10 @@ function GameCard({ game, index }: { game: Game; index: number }) {
 }
 
 function Home() {
+  useEffect(() => {
+    document.title = 'Games — 33ghosts'
+  }, [])
+
   return (
     <>
       <section id="intro">

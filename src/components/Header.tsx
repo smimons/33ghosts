@@ -4,7 +4,7 @@ import './Header.css'
 import { games } from '../data/games'
 
 const NAV_LINKS = [
-  { to: '/', label: 'Games', num: '01', end: true },
+  { to: '/', label: 'Our Games', num: '01', end: true },
   { to: '/about', label: 'About', num: '02' },
   { to: '/contact', label: 'Contact', num: '03' },
 ]
