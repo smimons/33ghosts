@@ -1,8 +1,9 @@
 import type { CSSProperties } from 'react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useRef, useState } from 'react'
 import { games, STATUS_META } from '../data/games'
 import type { Game, GameStatus } from '../data/games'
 import './Home.css'
+// import { StudioSticker } from './StudioSticker'
 
 const STATUS_STEP: Record<GameStatus, number> = {
   concept: 1,
@@ -106,9 +107,6 @@ function GameCard({ game, index }: { game: Game; index: number }) {
 }
 
 function Home() {
-  useEffect(() => {
-    document.title = 'Games — 33ghosts'
-  }, [])
 
   return (
     <>
@@ -125,6 +123,9 @@ function Home() {
           <GameCard key={game.id} game={game} index={index} />
         ))}
       </section>
+      {/* <div style={{margin: '16px'}}>
+      <StudioSticker></StudioSticker>
+      </div> */}
     </>
   )
 }

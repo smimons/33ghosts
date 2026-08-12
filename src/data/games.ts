@@ -54,7 +54,7 @@ export const games: Game[] = [
   {
     id: 'four-word',
     name: 'FourWord',
-    subtitle: 'Find the word that connects four random clues. For fans of: Connections.',
+    subtitle: 'Find the word that connects four random clues. For fans of: Connections, Remote Associates',
     url: 'https://playfourword.com',
     status: 'live',
   },
@@ -79,4 +79,18 @@ export const games: Game[] = [
     url: 'https://twindle.surge.sh',
     status: 'prototype',
   },
+  // {
+  //   id: 'chainlink',
+  //   name: 'Chainlink',
+  //   subtitle: 'A twist on an old classic. For fans of: Word Ladder, Crosswords',
+  //   url: null,
+  //   status: 'concept',
+  // },
+  // {
+  //   id: 'set-square',
+  //   name: 'SetSqaure',
+  //   subtitle: 'Fill tetrominos with linked symbols. For fans of: Queens, Fillomino',
+  //   url: null,
+  //   status: 'concept',
+  // },
 ]

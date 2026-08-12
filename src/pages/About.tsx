@@ -1,12 +1,7 @@
-import { useEffect } from 'react'
 import { KOFI_URL } from '../data/consts'
 import './About.css'
 
 function About() {
-  useEffect(() => {
-    document.title = 'About — 33ghosts'
-  }, [])
-
   return (
     <section id="about">
       <p className="eyebrow">Part No. 02</p>

@@ -1,11 +1,7 @@
-import { useEffect } from 'react'
 import { CONTACT_FORM_URL } from '../data/consts'
 import './Contact.css'
 
 function Contact() {
-  useEffect(() => {
-    document.title = 'Contact — 33ghosts'
-  }, [])
 
   return (
     <section id="contact">
