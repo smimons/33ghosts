@@ -59,24 +59,24 @@ export const games: Game[] = [
     status: 'live',
   },
   {
+    id: 'twindle',
+    name: 'Twindle (Demo)',
+    subtitle: 'A logical-thinking placement puzzle. For fans of: Sudoku, KenKen',
+    url: 'https://twindle.surge.sh',
+    status: 'in-development',
+  },
+  {
     id: 'dwindle',
     name: 'Dwindle (Demo)',
     subtitle: 'A deductive grid-clearing puzzle. For fans: of Rush Hour, Klotski',
     url: 'https://dwindle.surge.sh',
-    status: 'in-development',
+    status: 'prototype',
   },
   {
     id: 'ten-tiles',
     name: 'Ten Tiles (Demo)',
-    subtitle: 'A mini crossword without the clues. For fans of Scrabble, Boggle',
+    subtitle: 'A mini crossword without the clues. For fans: of Scrabble, Boggle',
     url: 'https://tentiles.surge.sh',
-    status: 'prototype',
-  },
-  {
-    id: 'twindle',
-    name: 'Twindle',
-    subtitle: 'A logical-thinking placement puzzle. For fans of: Sudoku, KenKen',
-    url: 'https://twindle.surge.sh',
     status: 'prototype',
   },
   // {
