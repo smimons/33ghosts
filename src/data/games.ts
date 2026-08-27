@@ -60,10 +60,10 @@ export const games: Game[] = [
   },
   {
     id: 'twindle',
-    name: 'Twindle (Demo)',
+    name: 'Twindle',
     subtitle: 'A logical-thinking placement puzzle. For fans of: Sudoku, KenKen',
-    url: 'https://twindle.surge.sh',
-    status: 'in-development',
+    url: 'https://playtwindle.com',
+    status: 'live',
   },
   {
     id: 'dwindle',
@@ -79,18 +79,4 @@ export const games: Game[] = [
     url: 'https://tentiles.surge.sh',
     status: 'prototype',
   },
-  // {
-  //   id: 'chainlink',
-  //   name: 'Chainlink',
-  //   subtitle: 'A twist on an old classic. For fans of: Word Ladder, Crosswords',
-  //   url: null,
-  //   status: 'concept',
-  // },
-  // {
-  //   id: 'set-square',
-  //   name: 'SetSqaure',
-  //   subtitle: 'Fill tetrominos with linked symbols. For fans of: Queens, Fillomino',
-  //   url: null,
-  //   status: 'concept',
-  // },
 ]

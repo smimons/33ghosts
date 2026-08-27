@@ -13,7 +13,7 @@
 
 import { useEffect } from 'react'
 
-const STUDIO_URL = 'https://33ghosts.surge.sh'
+const STUDIO_URL = 'https://weare33ghosts.com'
 const FONT_HREF = 'https://fonts.googleapis.com/css2?family=Jost:wght@600;700&display=swap'
 
 // Loads the Jost font on demand so the sticker looks right even in a repo
@@ -28,49 +28,15 @@ function useJostFont() {
     document.head.appendChild(link)
   }, [])
 }
-
-// Matches public/favicon.svg on the studio site -- keep these in sync.
-// overflow: visible matters here: a favicon resource isn't clipped by the
-// host page's CSS, but this same markup rendered inline in the page *is*
-// clipped at the viewBox edge by default, and the glyph's real ink extends
-// past it.
-function Icon({ size }: { size: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 64 64"
-      style={{ overflow: 'visible' }}
-      aria-hidden="true"
-      focusable="false"
-    >
-      <text
-        x="34.5"
-        y="33"
-        textAnchor="middle"
-        dominantBaseline="central"
-        fontFamily="Jost, 'Segoe UI', Arial, sans-serif"
-        fontWeight={700}
-        fontSize={56}
-        fill="#c81e1e"
-      >
-        ///:
-      </text>
-    </svg>
-  )
-}
-
 const STICKER_CSS = `
 .tg-sticker, .tg-sticker-mini {
   display: inline-flex;
   text-decoration: none;
   color: inherit;
   font-family: 'Jost', 'Segoe UI', Arial, sans-serif;
-  box-sizing: border-box;
   border: 2px solid #c81e1e;
   border-radius: 4px;
   transition: background-color 0.15s ease;
-  width: fit-content;
 }
 .tg-sticker {
   align-items: stretch;
@@ -84,6 +50,9 @@ const STICKER_CSS = `
   justify-content: center;
   width: 36px;
   flex-shrink: 0;
+  color: #c81e1e;
+  font-weight: 700;
+  margin: 0 4px;
 }
 .tg-sticker-text {
   display: flex;
@@ -113,6 +82,7 @@ const STICKER_CSS = `
   justify-content: center;
   width: 36px;
   height: 36px;
+  border: 0;
 }
 .tg-sticker-mini:hover, .tg-sticker-mini:focus-visible {
   background: rgba(200, 30, 30, 0.06);
@@ -136,7 +106,7 @@ export function StudioSticker({ href = STUDIO_URL, className }: StudioStickerPro
         className={className ? `tg-sticker ${className}` : 'tg-sticker'}
       >
         <span className="tg-icon-cell">
-          <Icon size={26} />
+          ///:
         </span>
         <span className="tg-sticker-text">
           <span className="tg-sticker-title">33ghosts</span>
@@ -160,7 +130,9 @@ export function StudioStickerMini({ href = STUDIO_URL, className }: StudioSticke
         title="More games from 33ghosts"
         className={className ? `tg-sticker-mini ${className}` : 'tg-sticker-mini'}
       >
-        <Icon size={26} />
+                <span className="tg-icon-cell">
+          ///:
+                </span>
       </a>
     </>
   )
