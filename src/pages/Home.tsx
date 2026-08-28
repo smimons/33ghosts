@@ -3,8 +3,6 @@ import { useCallback, useRef, useState } from 'react'
 import { games, STATUS_META } from '../data/games'
 import type { Game, GameStatus } from '../data/games'
 import './Home.css'
-import { StudioSticker, StudioStickerMini } from './StudioSticker'
-// import { StudioSticker } from './StudioSticker'
 
 const STATUS_STEP: Record<GameStatus, number> = {
   concept: 1,
@@ -124,12 +122,6 @@ function Home() {
           <GameCard key={game.id} game={game} index={index} />
         ))}
       </section>
-      <div style={{margin: '16px'}}>
-      <StudioSticker/>
-      </div>
-      <div style={{margin: '16px'}}>
-      <StudioStickerMini/>
-      </div>
     </>
   )
 }
